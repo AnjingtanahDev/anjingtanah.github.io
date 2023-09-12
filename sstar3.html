@@ -2,7 +2,8 @@
 <html>
 <head>
 <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
-<meta name="referrer" content="no-referrer"/>
+<meta name="referrer" content="no-referrer" />
+  <title>MejikuTV - StarSports3</title>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.3.3/shaka-player.ui.min.js' crossorigin='anonymous'></script>
 <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/Arjunaaaaa/lsbtv/shakacontrol.css' crossorigin='anonymous'/>
 <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/Arjunaaaaa/lsbtv/gaya.css' crossorigin='anonymous'/>
@@ -54,7 +55,7 @@ window.player = player;
 window.ui = ui; 
 player.addEventListener('error', onPlayerErrorEvent); 
 controls.addEventListener('error', onUIErrorEvent); 
-try{await player.load('https://nxanv-live-cdn.mncnow.id/live/eds/Soccer-2/sa_dash_vmx/Soccer-2.mpd'); 
+try{await player.load('https://nyanv-live-cdn.mncnow.id/live/eds/MNCSports3-HD/sa_dash_vmx/MNCSports3-HD.mpd'); 
 console.log('The video has now been loaded!');} catch (error) {onPlayerError(error);}} 
 function onPlayerErrorEvent(errorEvent) {onPlayerError(event.detail);} 
 function onPlayerError(error) {console.error('Error code', error.code, 'object', error);} 
