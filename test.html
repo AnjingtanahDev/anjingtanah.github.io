@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
@@ -43,7 +43,7 @@
  <button class="btn2" onclick="zoomIn ()">ZOOM IN
  <button class="btn2" onclick="zoomOut ()">ZOOM OUT
  </button>
-  <a href="go:nsmncs1" class="btn2" >NS PLAYER
+  <a href="go:nsss3hd" class="btn2" >NS PLAYER
  </a>
 </fieldset>
 		  
@@ -71,7 +71,11 @@ player.configure({
   drm: {
     clearKeys: {
       // 'key-id-in-hex': 'key-in-hex',
-      '531c6d50e3e9f9ba66446f624f492289': 'd769d9ae238bdd424f8bcdcdc9a3801f'
+      'fadd2720deff5925ab86df0819cd7775': 'f67ff08c7ebc779f6a6fcfc83835f65b'
+  
+        
+        
+      
     }
   }
 });
@@ -80,7 +84,7 @@ window.player = player;
 window.ui = ui; 
 player.addEventListener('error', onPlayerErrorEvent); 
 controls.addEventListener('error', onUIErrorEvent); 
-try{await player.load('https://nyanv-live-cdn.mncnow.id/live/eds/MNCSports-HD/sa_dash_vmx/MNCSports-HD.mpd'); 
+try{await player.load('https://nyanv-live-cdn.mncnow.id/live/eds/MNCSports3-HD/sa_dash_vmx/MNCSports3-HD.mpd'); 
 console.log('The video has now been loaded!');} catch (error) {onPlayerError(error);}} 
 function onPlayerErrorEvent(errorEvent) {onPlayerError(event.detail);} 
 function onPlayerError(error) {console.error('Error code', error.code, 'object', error);} 
@@ -90,4 +94,4 @@ document.addEventListener('shaka-ui-loaded', init);
 document.addEventListener('shaka-ui-load-failed', initFailed); 
 </script>
 
- </html>
+</html>
